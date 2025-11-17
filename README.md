@@ -1,7 +1,26 @@
 # RMG Identifier (`rmg-ident`)
 
-This crate provides the core identifier types used in the Recursive
-Meta-Graph (RMG) engine.
+**TL;DR**: This crate provides core, domain-separated identifier types (NodeId, TypeId, EdgeId) for the Recursive Meta-Graph (RMG) engine, ensuring deterministic hashing and collision prevention.
+
+## Getting Started
+
+To get a local copy of `rmg-ident` up and running, follow these steps:
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/flyingrobots/rmg-ident.git
+    cd rmg-ident
+    ```
+
+2.  **Run tests**:
+    ```bash
+    cargo test
+    ```
+
+3.  **Build the library**:
+    ```bash
+    cargo build
+    ```
 
 ## Overview
 
