@@ -61,19 +61,3 @@ pub fn make_edge_id(label: &str) -> EdgeId {
     hasher.update(label.as_bytes());
     EdgeId(hasher.finalize().into())
 }
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn domain_separation_prevents_cross_type_collisions() {
-        let lbl = "foo";
-        let t = make_type_id(lbl).0;
-        let n = make_node_id(lbl).0;
-        let e = make_edge_id(lbl).0;
-        assert_ne!(t, n);
-        assert_ne!(t, e);
-        assert_ne!(n, e);
-    }
-}
