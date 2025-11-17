@@ -1,0 +1,14 @@
+[package]
+name = "rmg-ident"
+version = "0.1.0"
+edition = "2021"
+authors = ["J. Kirby Ross <kirby@flyingrobots.com>"]
+description = "Identifier and hashing utilities for the Recursive Meta-Graph (RMG) engine."
+license = "Apache-2.0"
+repository = "https://github.com/flyingrobots/rmg-ident"
+readme = "README.md"
+keywords = ["rmg", "graph", "database", "engine", "deterministic"]
+categories = ["data-structures", "database"]
+
+[dependencies]
+blake3 = "1.5.0"
